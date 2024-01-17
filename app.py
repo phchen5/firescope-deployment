@@ -64,7 +64,7 @@ else:
     label, probs = pred_and_plot_image(model_tl, file, auto_transforms, device)
     
     if label == 0:
-        st.write("It is a fire image!")
+        st.write("This is a fire image! 🔥")
     else:
-        st.write("It is not a fire image!")
+        st.write("This is not a fire image!")
 
