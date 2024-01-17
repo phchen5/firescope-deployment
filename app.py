@@ -10,7 +10,7 @@ device = torch.device("cpu")
 
 # load model function
 def resume(model, filename):
-    model.load_state_dict(torch.load(filename))
+    model.load_state_dict(torch.load(filename, map_location=device))
 
 #define function to predict custom images
 def pred_and_plot_image(model, image_path, transform, device: torch.device=device):
