@@ -64,12 +64,12 @@ else:
     label, probs = pred_and_plot_image(model_tl, file, auto_transforms, device)
     
     if label == 0:
-        st.write("This is a fire image! 🔥")
+        st.write("### This is a fire image! 🔥")
     else:
         st.write("This is not a fire image!")
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
 
-    st.write("Confidence of Prediction: ", formatted_confidence)
+    st.write("### Confidence of Prediction: ", formatted_confidence)
 
