@@ -52,7 +52,7 @@ st.write("""
          # Forest Fire Detection
          """
          )
-st.write("This is an image classification web app to predict forest fire")
+st.write("This is an image classification web app to predict forest fire.")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 if file is None:
@@ -66,7 +66,7 @@ else:
     if label == 0:
         st.write("### This is a fire image! 🔥")
     else:
-        st.write("This is not a fire image!")
+        st.write("### his is not a fire image!")
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
