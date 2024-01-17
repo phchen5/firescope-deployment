@@ -68,6 +68,8 @@ else:
     else:
         st.write("This is not a fire image!")
     
-    confidence = abs(probs - 0.5) * 2
-    st.write("Confidence of Prediction: ", confidence)
+    confidence = float(abs(probs - 0.5) * 2)
+    formatted_confidence = '{:.2%}'.format(confidence)
+
+    st.write("Confidence of Prediction: ", formatted_confidence)
 
