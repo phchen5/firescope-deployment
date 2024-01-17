@@ -67,4 +67,7 @@ else:
         st.write("This is a fire image! 🔥")
     else:
         st.write("This is not a fire image!")
+    
+    confidence = abs(probs - 0.5) * 2
+    st.write("Confidence of Prediction: ", confidence)
 
