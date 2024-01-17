@@ -1,4 +1,4 @@
 pillow==9.4.0
-pytorch==2.1.2
+torch==2.1.2
 torchvision==0.16.2
 streamlit==1.30.0
