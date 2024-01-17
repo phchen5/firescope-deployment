@@ -66,7 +66,7 @@ else:
     if label == 0:
         st.write("### This is a fire image! 🔥")
     else:
-        st.write("### his is not a fire image!")
+        st.write("### This is not a fire image!")
     
     confidence = float(abs(probs - 0.5) * 2)
     formatted_confidence = '{:.2%}'.format(confidence)
